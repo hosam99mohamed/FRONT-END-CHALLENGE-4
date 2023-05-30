@@ -1,0 +1,102 @@
+**{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsl(0, 0%, 100%, 0.75);
+    --Verylightgrey: hsl(0, 0%, 95%);
+}
+
+
+
+body {
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: var(--Verylightgrey); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 40px ;
+}
+.container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr );
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container div {
+    padding: 40px;
+}
+.container .box-1 {
+    background-color: var(--Brightorange);
+
+}
+.container .box-2 {
+    background-color: var(--Darkcyan);
+}
+.container .box-3 {
+    background-color: var(--Verydarkcyan);
+}
+.container  h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Verylightgrey);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.container  p {
+    color: var(--Verylightgrey);
+    line-height: 1.7;
+    opacity: .7;
+}
+.container  button {
+    text-decoration: none;
+    border: none;
+    background-color: var(--Verylightgrey);
+    border-radius: 26px;
+    padding: 15px;
+    width: 150px;
+    font-size: 17px;
+    margin-top: 60px;
+    font-weight: bold;
+    border: 2px solid var(--Verylightgrey);
+    transition: .4s;
+}
+.container .box-1 button {
+    color: var(--Brightorange);
+}
+.container .box-1 button:hover {
+    background-color: var(--Brightorange);
+    color: var(--Verylightgrey);
+}
+.container .box-2 button {
+    color: var(--Darkcyan);
+}
+.container .box-2 button:hover {
+    background-color: var(--Darkcyan);
+    color: var(--Verylightgrey);
+}
+.container .box-3 button {
+    color: var(--Verydarkcyan);
+}
+.container .box-3 button:hover {
+    background-color: var(--Verydarkcyan);
+    color: var(--Verylightgrey);
+}
+@media (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container button {
+        margin-top: 15px;
+    }
+}
